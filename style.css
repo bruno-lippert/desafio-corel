@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
 
+:root {
+    --fonte0: 'Passion One', sans-serif;
+    --fonte1: 'Sriracha', serif;
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,13 +27,13 @@ header {
 }
 
 header > h1 {
-    font: bold 5vw 'Passion One';
+    font: bold 5vw var(--fonte0);
     padding-top: 50px;
     font-variant: small-caps ;
 }
 
 header > p {
-    font: normal 1em Verdana;
+    font: normal 1em var(--fonte2);
     margin: 0px;
     padding-bottom: 50px;
 }
@@ -36,7 +42,7 @@ a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte2);
 }
 
 a:hover {
@@ -47,7 +53,7 @@ section {
     display: block;
     padding: 10vh 0vh 10vh 30px;
     line-height: 2em;
-    font-family: 'Sriracha';
+    font-family: var(--fonte1);
     font-size: 2vw;
 }
 
@@ -77,6 +83,6 @@ footer {
     padding: 10px;
 }
 footer p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte2);
     font-size: 1em;
 }
