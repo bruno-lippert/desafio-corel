@@ -56,12 +56,17 @@ section {
     font: normal 3.5vw var(--fonte1);
 }
 
+section.especial {
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.37);
+}
+
 section.especial > p {
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     display: inline-block;
     padding: 5px;
     color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.363);
 }
 
 section#imagem1 {
