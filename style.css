@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
 
 :root {
-    --fonte0: 'Passion One', sans-serif;
+    --fonte0: 'Passion One', cursive, sans-serif;
     --fonte1: 'Sriracha', serif;
     --fonte2: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -14,7 +14,7 @@
     padding: 0px;
 }
 
-body {
+html, body {
     margin: 0px;
     min-height: 100vh;
 }
@@ -27,7 +27,7 @@ header {
 }
 
 header > h1 {
-    font: bold 5vw var(--fonte0);
+    font: bold 10vw var(--fonte0);
     padding-top: 50px;
     font-variant: small-caps ;
 }
@@ -53,8 +53,7 @@ section {
     display: block;
     padding: 10vh 0vh 10vh 30px;
     line-height: 2em;
-    font-family: var(--fonte1);
-    font-size: 2vw;
+    font: normal 3.5vw var(--fonte1);
 }
 
 section.especial > p {
@@ -63,7 +62,6 @@ section.especial > p {
     display: inline-block;
     padding: 5px;
     color: white;
-    width: 400px;
 }
 
 section#imagem1 {
