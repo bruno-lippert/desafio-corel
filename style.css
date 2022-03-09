@@ -7,6 +7,11 @@ body {
     margin: 0px;
 }
 
+* {
+    box-shadow: rgba(0, 0, 0, 0.329);
+    text-shadow: rgba(0, 0, 0, 0.575);
+}
+
 header {
     background-color: black;
     padding: 50px;
@@ -26,40 +31,51 @@ header  p {
     color: white;
 }
 
-header a {
+a {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-section p {
+section {
+    display: block;
+    padding: 10vh 0vh 10vh 30px;
+    line-height: 2em;
     font-family: 'Sriracha';
     font-size: 2vw;
-    padding-left: 40px;
 }
 
-section p.especial {
-    display: inline-block;
-    padding: 0px;
-    margin: 0px 0px 0px 40px;
-    padding: ;
-    color: white;
-    height: 600px;
-}
-
-section div {
+section.especial > p {
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
-    height: 600px;
+    display: inline-block;
+    padding: 5px;
+    color: white;
 }
 
-section div#imagem1 {
+section#imagem1 {
     background: lightgray url('imagens/background001.jpg')right center no-repeat fixed;
+    background-size: cover;
 }
 
-section div#imagem2 {
+section#imagem2 {
     background: lightgray url('imagens/background002.jpg')right center no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 10px;
 }
